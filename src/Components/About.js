@@ -8,6 +8,9 @@ function About(props) {
         'Layout Wrapping and accessing those chields',
         'JSON Data Server',
         'Menu inside array & useHistory to clicking theme',
+        'Side Bar & App Bar',
+        'npm install date-fns'
+
     ]
 
     return (

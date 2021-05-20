@@ -1,40 +1,28 @@
 {
   "allNotes": [
     {
-      "id": 1,
-      "title": "Looking for Bitcoin",
-      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "category": "reminder"
-    },
-    {
-      "title": "Checking",
-      "details": "hello Focus on work",
-      "category": "work",
-      "id": 4
-    },
-    {
-      "title": "HTML",
-      "details": "react ",
-      "category": "reminder",
-      "id": 5
-    },
-    {
-      "title": "Taiseen",
-      "details": "focus",
-      "category": "work",
-      "id": 6
-    },
-    {
       "title": "BitCoin",
-      "details": "Block Chain",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "category": "money",
-      "id": 7
+      "id": 9
     },
     {
-      "title": "eat",
-      "details": "lunch at work ",
+      "title": "Big Test",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "category": "work",
+      "id": 10
+    },
+    {
+      "title": "Focus",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. dummy text of the printing and typesetting industry. Lorem Ipsum has ",
       "category": "todo",
-      "id": 8
+      "id": 11
+    },
+    {
+      "title": "Porject",
+      "details": "dummy text of the printing and typesetting industry. Lorem Ipsum has dummy text of the printing and typesetting industry. Lorem Ipsum has ",
+      "category": "reminder",
+      "id": 12
     }
   ]
 }

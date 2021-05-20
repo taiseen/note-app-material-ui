@@ -7,6 +7,8 @@
 
 ## Technologies :
 Project is created with:
+* npm install json-server -g
+* npm install date-fns
 * HTML 
 * Material UI
 * React 

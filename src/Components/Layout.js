@@ -1,7 +1,8 @@
 import React from 'react';
-import { Drawer, List, ListItem, ListItemIcon, ListItemText, makeStyles, Typography } from '@material-ui/core';
+import { AppBar, Drawer, List, ListItem, ListItemIcon, ListItemText, makeStyles, Toolbar, Typography } from '@material-ui/core';
 import { AddCircleOutlineRounded, ArrowForwardOutlined, SubjectOutlined } from '@material-ui/icons';
 import { useHistory, useLocation } from 'react-router';
+import { format } from 'date-fns';
 
 const drawerWidth = 240;
 
@@ -28,7 +29,11 @@ const useStyles = makeStyles((theme) => {
         title: {
             padding: theme.spacing(2),
             margin: '0 auto',
-        }
+        },
+        appBar: {
+            width: `calc(100% - ${drawerWidth}px)`
+        },
+        toolBar: theme.mixins.toolbar
     }
 })
 
@@ -64,6 +69,13 @@ function Layout({ children }) {
 
             {/* app bar */}
 
+            <AppBar className={classes.appBar} elevation={0} >
+                <Toolbar>
+                    <Typography>
+                        Today is : {format(new Date(), 'do MMMM Y')}
+                    </Typography>
+                </Toolbar>
+            </AppBar>
 
 
             {/* side bar */}
@@ -105,6 +117,7 @@ function Layout({ children }) {
 
             {/* all notes */}
             <div className={classes.page}>
+                <div className={classes.toolBar}></div>
                 {children}
             </div>
         </div>
