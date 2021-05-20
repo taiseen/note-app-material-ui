@@ -19,6 +19,9 @@ const useStyles = makeStyles({
             }
         }
     },
+    titleDate: {
+        fontSize: 12,
+    }
 });
 
 
@@ -27,7 +30,7 @@ function NoteCard({ note, handleDelete }) {
 
     const classes = useStyles(note);
 
-    const { id, title, category, details } = note;
+    const { id, title, category, date, details } = note;
 
     return (
 
@@ -41,8 +44,10 @@ function NoteCard({ note, handleDelete }) {
                 title={title}
                 subheader={category}
             />
-
             <CardContent>
+                <Typography className={classes.titleDate} color="textSecondary" gutterBottom>
+                    {date}
+                </Typography>
                 <Typography variant="body2" color="textSecondary">
                     {details}
                 </Typography>

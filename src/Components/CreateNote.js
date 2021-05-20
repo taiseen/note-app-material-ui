@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import { useHistory } from 'react-router';
+import { format } from 'date-fns';
 
 const useStyles = makeStyles({
     field: {
@@ -41,6 +42,7 @@ function CreateNote() {
             setDetailsError(true)
         }
 
+        const date = format(new Date(), 'do MMMM Y');
         if (title && details) {
 
             const url = 'http://localhost:8000/allNotes';
@@ -48,7 +50,7 @@ function CreateNote() {
             fetch(url, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ title, details, category })
+                body: JSON.stringify({ title, details, category, date })
             }).then(history.push('/'))
         }
     }
