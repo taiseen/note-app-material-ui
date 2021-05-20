@@ -4,11 +4,14 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import AllNotes from './Components/AllNotes/AllNotes';
-import CreateNote from './Components/CreateNote/CreateNote';
-import PageNotFound from './Components/PageNotFound/PageNotFound';
+import AllNotes from './Components/AllNotes';
+import CreateNote from './Components/CreateNote';
+import PageNotFound from './Components/PageNotFound';
+import Layout from './Components/Layout';
+
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
-import { blue, green, purple } from "@material-ui/core/colors";
+import { blue } from "@material-ui/core/colors";
+import About from './Components/About';
 
 
 const theme = createMuiTheme({
@@ -36,17 +39,22 @@ const App = () => {
     return (
         <ThemeProvider theme={theme}>
             <Router>
-                <Switch>
-                    <Route exact path="/">
-                        <AllNotes />
-                    </Route>
-                    <Route path="/createNote">
-                        <CreateNote />
-                    </Route>
-                    <Route path="/*">
-                        <PageNotFound />
-                    </Route>
-                </Switch>
+                <Layout>
+                    <Switch>
+                        <Route exact path="/">
+                            <AllNotes />
+                        </Route>
+                        <Route path="/createNote">
+                            <CreateNote />
+                        </Route>
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/*">
+                            <PageNotFound />
+                        </Route>
+                    </Switch>
+                </Layout>
             </Router>
         </ThemeProvider>
     );
