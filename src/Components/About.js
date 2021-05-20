@@ -1,15 +1,35 @@
 import React from 'react';
+import { Container, List, ListItem, ListItemText, Typography } from '@material-ui/core';
 
 function About(props) {
+
+
+    const context = [
+        'Material UI',
+        'Layout Wrapping and accessing those chields',
+        'JSON Data Server',
+        'Menu inside array & useHistory to clicking theme',
+    ]
+
     return (
-        <div>
-            <h2>Learning Context</h2>
+        <Container >
+            <Typography variant="h4">
+                Learning Context
+            </Typography>
+
+            <List>
+                {
+                    context.map((data, idx) => (
+                        <ListItem key={data[idx]}>
+                            <ListItemText primary={data} />
+                        </ListItem>
+                    ))
+                }
+            </List>
+
             <ul>
-                <li>Material UI </li>
-                <li>Layout Wrapping and accessing those chields</li>
-                <li>JSON Data Server</li>
             </ul>
-        </div>
+        </Container>
     );
 }
 

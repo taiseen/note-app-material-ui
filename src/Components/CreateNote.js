@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, FormControl, FormControlLabel, FormLabel, makeStyles, Radio, RadioGroup } from '@material-ui/core';
+import { Container, FormControl, FormControlLabel, FormLabel, makeStyles, Radio, RadioGroup, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
@@ -18,7 +18,7 @@ function CreateNote() {
 
     const classes = useStyles();
     const history = useHistory();
-    
+
     const [title, setTitle] = useState('');
     const [details, setDetails] = useState('');
     const [titleError, setTitleError] = useState(false);
@@ -56,7 +56,9 @@ function CreateNote() {
 
     return (
         <Container>
-            <h1>Create a New Note</h1>
+            <Typography variant="h4">
+                Create a New Note
+            </Typography>
 
             <form noValidate autoComplete="off" onSubmit={handleSubmit}>
 
