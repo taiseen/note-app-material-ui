@@ -1,0 +1,11 @@
+20-May-2021 
+
+Json Server:-
+npm install -g json-server
+json-server --watch src/Components/JsonDB/db.json --port 8000
+
+in json dataStructure => tope level properties are called Resource & 
+these Resource become an End Point of the URL OR
+URL End Point interact with this Resource
+
+

@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+import AllNotes from './Components/AllNotes/AllNotes';
+import CreateNote from './Components/CreateNote/CreateNote';
+import PageNotFound from './Components/PageNotFound/PageNotFound';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import { blue, green, purple } from "@material-ui/core/colors";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const theme = createMuiTheme({
+
+    palette: {
+        primary: {
+            main: '#fefefe',
+        },
+        secondary: blue,
+        typography: {
+            fontFamily: 'Quicksand',
+            fontWeightLight: 400,
+            fontWeightRegular: 500,
+            fontWeightMedium: 600,
+            fontWeightBold: 700,
+        },
+    }
+
+});
+
+
+
+const App = () => {
+
+    return (
+        <ThemeProvider theme={theme}>
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <AllNotes />
+                    </Route>
+                    <Route path="/createNote">
+                        <CreateNote />
+                    </Route>
+                    <Route path="/*">
+                        <PageNotFound />
+                    </Route>
+                </Switch>
+            </Router>
+        </ThemeProvider>
+    );
+};
 
 export default App;
