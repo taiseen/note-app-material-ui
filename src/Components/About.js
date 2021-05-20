@@ -3,7 +3,6 @@ import { Container, List, ListItem, ListItemText, Typography } from '@material-u
 
 function About(props) {
 
-
     const context = [
         'Material UI',
         'Layout Wrapping and accessing those chields',
@@ -26,9 +25,6 @@ function About(props) {
                     ))
                 }
             </List>
-
-            <ul>
-            </ul>
         </Container>
     );
 }

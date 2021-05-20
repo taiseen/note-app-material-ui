@@ -5,23 +5,26 @@ import { useHistory, useLocation } from 'react-router';
 
 const drawerWidth = 240;
 
-const useStyles = makeStyles({
-    page: {
-        backgroundColor: '#f2f2f2',
-        width: '100%',
-    },
-    drawer: {
-        width: drawerWidth,
-    },
-    drawerPaper: {
-        width: drawerWidth,
-    },
-    root: {
-        display: 'flex',
-    },
-    active: {
-        backgroundColor: '#F1F1F1',
-    },
+const useStyles = makeStyles(() => {
+
+    return {
+        page: {
+            backgroundColor: '#f2f2f2',
+            width: '100%',
+        },
+        drawer: {
+            width: drawerWidth,
+        },
+        drawerPaper: {
+            width: drawerWidth,
+        },
+        root: {
+            display: 'flex',
+        },
+        active: {
+            backgroundColor: '#F1F1F1',
+        },
+    }
 })
 
 function Layout({ children }) {
