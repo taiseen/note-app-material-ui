@@ -17,6 +17,24 @@
       "details": "react ",
       "category": "reminder",
       "id": 5
+    },
+    {
+      "title": "Taiseen",
+      "details": "focus",
+      "category": "work",
+      "id": 6
+    },
+    {
+      "title": "BitCoin",
+      "details": "Block Chain",
+      "category": "money",
+      "id": 7
+    },
+    {
+      "title": "eat",
+      "details": "lunch at work ",
+      "category": "todo",
+      "id": 8
     }
   ]
 }
