@@ -15,7 +15,7 @@ function AllNotes() {
             .then(data => setAllNotes(data))
             .catch(err => console.log(err));
 
-    }, [])
+    }, [allNotes])
 
 
     const handleDelete = async (id) => {
