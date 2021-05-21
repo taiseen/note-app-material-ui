@@ -8,13 +8,6 @@
       "id": 9
     },
     {
-      "title": "Big Test",
-      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "category": "work",
-      "date": "20th May 2021",
-      "id": 10
-    },
-    {
       "title": "Focus",
       "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. dummy text of the printing and typesetting industry. Lorem Ipsum has ",
       "category": "todo",
@@ -34,6 +27,27 @@
       "category": "reminder",
       "date": "20th May 2021",
       "id": 13
+    },
+    {
+      "title": "UseEffect",
+      "details": "Dependency resolves, it's going to be memory lick...",
+      "category": "work",
+      "date": "21st May 2021",
+      "id": 14
+    },
+    {
+      "title": "Big Test",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the",
+      "category": "work",
+      "date": "21st May 2021",
+      "id": 15
+    },
+    {
+      "title": "Note Test",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and",
+      "category": "todo",
+      "date": "21st May 2021",
+      "id": 16
     }
   ]
 }

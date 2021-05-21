@@ -1,16 +1,22 @@
+import { makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
 
-const PageNotFound = () => {
-    
-    const demo = {
+
+const useStyles = makeStyles({
+    center: {
         margin: '0 auto',
         textAlign: 'center',
     }
+})
+const PageNotFound = () => {
+
+    const classes = useStyles();
 
     return (
-        <div style={demo}>
-            <h1>404 | Page Not Found</h1>
-        </div>
+
+        <Typography variant="h4" className={classes.center}>
+            404 | Page Not Found
+        </Typography>
     );
 };
 

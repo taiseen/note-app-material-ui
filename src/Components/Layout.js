@@ -1,8 +1,11 @@
 import React from 'react';
-import { AppBar, Drawer, List, ListItem, ListItemIcon, ListItemText, makeStyles, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Avatar, Drawer, List, ListItem, ListItemIcon, ListItemText, makeStyles, Toolbar, Typography } from '@material-ui/core';
 import { AddCircleOutlineRounded, ArrowForwardOutlined, SubjectOutlined } from '@material-ui/icons';
 import { useHistory, useLocation } from 'react-router';
 import { format } from 'date-fns';
+
+import boy from '../img/boy.png';
+// https://icon-icons.com/icon/boy-child-man-male-people-avatar/131270
 
 const drawerWidth = 240;
 
@@ -37,6 +40,10 @@ const useStyles = makeStyles((theme) => {
         date: {
             flexGrow: 1,
         },
+        avatar : {
+            marginLeft : theme.spacing(2),
+        },
+
     }
 })
 
@@ -66,7 +73,7 @@ function Layout({ children }) {
 
 
 
-
+    // HTML DOM Nodes
     return (
         <div className={classes.root}>
 
@@ -80,6 +87,7 @@ function Layout({ children }) {
                     <Typography>
                         Taiseen
                     </Typography>
+                    <Avatar src={boy}  className={classes.avatar}/>
                 </Toolbar>
             </AppBar>
 
