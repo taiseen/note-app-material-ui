@@ -9,6 +9,7 @@
 Project is created with:
 * npm install json-server -g
 * npm install date-fns
+* npm install react-masonry-css
 * HTML 
 * Material UI
 * React 

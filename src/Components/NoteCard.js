@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, IconButton, Typography, makeStyles, Avatar } from '@material-ui/core';
+import { blue, green, orange, pink } from '@material-ui/core/colors';
 import { DeleteOutlined } from '@material-ui/icons';
 import React from 'react';
 
@@ -25,15 +26,16 @@ const useStyles = makeStyles({
     avatarColor: {
         backgroundColor: (note) => {
             if (note.category === 'work') {
-                return `red`
+                return pink[500]
             } else if (note.category === 'money') {
-                return `green`
+                return green[500]
             } else if (note.category === 'reminder') {
-                return `blue`
-            } else if (note.category === 'todo') {
-                return `orange`
+                return blue[700]
+            } else {
+                return orange[600]
             }
         },
+        fontWeight: 600,
     }
 });
 

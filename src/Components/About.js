@@ -9,8 +9,9 @@ function About(props) {
         'JSON Data Server',
         'Menu inside array & useHistory to clicking theme',
         'Side Bar & App Bar',
-        'npm install date-fns'
-
+        'npm install date-fns',
+        'Masonry CSS (masonry layout)',
+        'npm install react-masonry-css',
     ]
 
     return (

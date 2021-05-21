@@ -1,5 +1,6 @@
 import { Container, Grid } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
+import Masonry from 'react-masonry-css';
 import NoteCard from './NoteCard';
 
 function AllNotes() {
@@ -29,9 +30,30 @@ function AllNotes() {
         setAllNotes(newNotes);
     }
 
+    const breakpoints = {
+        default: 3,
+        1100: 2,
+        700: 1,
+    }
+    
     return (
         <Container>
-            <Grid container spacing={3}>
+            <Masonry
+                breakpointCols={breakpoints}
+                className="my-masonry-grid"
+                columnClassName="my-masonry-grid_column"
+            >
+                {
+                    allNotes.map(note => (
+
+                        <div key={note.id}>
+                            <NoteCard note={note} handleDelete={handleDelete} />
+                        </div>
+                    ))
+                }
+            </Masonry>
+
+            {/* <Grid container spacing={3}>
                 {
                     allNotes.map(note => (
 
@@ -40,7 +62,7 @@ function AllNotes() {
                         </Grid>
                     ))
                 }
-            </Grid>
+            </Grid> */}
         </Container>
     );
 }
