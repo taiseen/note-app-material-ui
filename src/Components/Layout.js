@@ -78,7 +78,6 @@ function Layout({ children }) {
         <div className={classes.root}>
 
             {/* app bar */}
-
             <AppBar className={classes.appBar} elevation={0} >
                 <Toolbar>
                     <Typography className={classes.date}>

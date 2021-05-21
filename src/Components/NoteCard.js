@@ -10,13 +10,13 @@ const useStyles = makeStyles({
     borderColor: {
         border: (note) => {
             if (note.category === 'work') {
-                return `${width}px ${style} red`
+                return `${width}px ${style} ${pink[500]}`;
             } else if (note.category === 'money') {
-                return `${width}px ${style} green`
+                return `${width}px ${style} ${green[500]}`;
             } else if (note.category === 'reminder') {
-                return `${width}px ${style} blue`
-            } else if (note.category === 'todo') {
-                return `${width}px ${style} orange`
+                return `${width}px ${style} ${blue[500]}`;
+            } else {
+                return `${width}px ${style} ${orange[500]}`;
             }
         },
     },
@@ -63,11 +63,11 @@ function NoteCard({ note, handleDelete }) {
                     </IconButton>
                 }
                 title={title}
-                subheader={category}
+                subheader={`${category} | ${date}`}
             />
             <CardContent>
-                <Typography className={classes.titleDate} color="textSecondary" gutterBottom>
-                    {date}
+                <Typography className={classes.titleDate} color="textPrimary" gutterBottom>
+                    {category}
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
                     {details}
