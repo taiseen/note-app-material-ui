@@ -1,4 +1,4 @@
-import { Container, Grid } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import Masonry from 'react-masonry-css';
 import NoteCard from './NoteCard';
