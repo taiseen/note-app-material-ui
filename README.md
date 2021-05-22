@@ -3,6 +3,7 @@
 ## Topic of Focus:
 - JSON Server use here for API calling
 - Array of Menu & useHistory for click event
+- Layout Wrapper & inside that Child accessing
 
 
 ## Technologies :
